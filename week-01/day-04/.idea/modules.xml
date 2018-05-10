@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/expressions and control flow.iml" filepath="$PROJECT_DIR$/expressions and control flow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day-04.iml" filepath="$PROJECT_DIR$/day-04.iml" />
     </modules>
   </component>
 </project>
