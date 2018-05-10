@@ -101,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IntroduceYourself">
+  <component name="RunManager" selected="Application.TwoNumbers">
     <configuration name="HelloMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloMe" />
       <module name="day-04" />
@@ -117,13 +117,13 @@
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="IfExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IfExample" />
+    <configuration name="IntroduceYourself" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroduceYourself" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="IntroduceYourself" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IntroduceYourself" />
+    <configuration name="TwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TwoNumbers" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -169,19 +169,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.IfExample" />
       <item itemvalue="Application.HelloMe" />
       <item itemvalue="Application.HumptyDumpty" />
       <item itemvalue="Application.HelloOthers" />
       <item itemvalue="Application.IntroduceYourself" />
+      <item itemvalue="Application.TwoNumbers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwoNumbers" />
         <item itemvalue="Application.IntroduceYourself" />
         <item itemvalue="Application.HelloOthers" />
         <item itemvalue="Application.HumptyDumpty" />
         <item itemvalue="Application.HelloMe" />
-        <item itemvalue="Application.IfExample" />
       </list>
     </recent_temporary>
   </component>
