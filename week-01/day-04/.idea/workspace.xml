@@ -105,7 +105,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Swap">
+  <component name="RunManager" selected="Application.BMI">
+    <configuration name="BMI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BMI" />
+      <module name="day-04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="CodingHours" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodingHours" />
       <module name="day-04" />
@@ -113,11 +118,6 @@
     </configuration>
     <configuration name="FavoriteNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FavoriteNumber" />
-      <module name="day-04" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="IntroduceYourself" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IntroduceYourself" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -173,19 +173,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.IntroduceYourself" />
       <item itemvalue="Application.TwoNumbers" />
       <item itemvalue="Application.CodingHours" />
       <item itemvalue="Application.FavoriteNumber" />
       <item itemvalue="Application.Swap" />
+      <item itemvalue="Application.BMI" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BMI" />
         <item itemvalue="Application.Swap" />
         <item itemvalue="Application.CodingHours" />
         <item itemvalue="Application.FavoriteNumber" />
         <item itemvalue="Application.TwoNumbers" />
-        <item itemvalue="Application.IntroduceYourself" />
       </list>
     </recent_temporary>
   </component>
