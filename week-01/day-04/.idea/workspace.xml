@@ -105,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BMI">
+  <component name="RunManager" selected="Application.DefineBasicInfo">
     <configuration name="BMI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BMI" />
       <module name="day-04" />
@@ -116,6 +116,11 @@
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="DefineBasicInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DefineBasicInfo" />
+      <module name="day-04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="FavoriteNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FavoriteNumber" />
       <module name="day-04" />
@@ -123,11 +128,6 @@
     </configuration>
     <configuration name="Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Swap" />
-      <module name="day-04" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TwoNumbers" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -173,19 +173,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.TwoNumbers" />
       <item itemvalue="Application.CodingHours" />
       <item itemvalue="Application.FavoriteNumber" />
       <item itemvalue="Application.Swap" />
       <item itemvalue="Application.BMI" />
+      <item itemvalue="Application.DefineBasicInfo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DefineBasicInfo" />
         <item itemvalue="Application.BMI" />
         <item itemvalue="Application.Swap" />
         <item itemvalue="Application.CodingHours" />
         <item itemvalue="Application.FavoriteNumber" />
-        <item itemvalue="Application.TwoNumbers" />
       </list>
     </recent_temporary>
   </component>
