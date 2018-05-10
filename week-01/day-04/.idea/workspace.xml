@@ -125,14 +125,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HumptyDumpty">
+  <component name="RunManager" selected="Application.HelloOthers">
     <configuration name="HelloMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloMe" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+    <configuration name="HelloOthers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloOthers" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -193,19 +193,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.HelloWorld" />
       <item itemvalue="Application.IfExample" />
       <item itemvalue="Application.LoopExample" />
       <item itemvalue="Application.HelloMe" />
       <item itemvalue="Application.HumptyDumpty" />
+      <item itemvalue="Application.HelloOthers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloOthers" />
         <item itemvalue="Application.HumptyDumpty" />
         <item itemvalue="Application.HelloMe" />
         <item itemvalue="Application.IfExample" />
         <item itemvalue="Application.LoopExample" />
-        <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
