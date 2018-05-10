@@ -12,6 +12,6 @@ public class CodingHours {
         int averageHoursWeekly = 52;
         double averageHoursSemester = 884;
         double percentageOfCoding = (double)codingHoursSemester / averageHoursSemester;
-        System.out.println("percentage of coding hours is " + percentageOfCoding * 100.0D);
+        System.out.println("percentage of coding hours is " + percentageOfCoding * 100);
     }
 }
