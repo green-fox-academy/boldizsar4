@@ -127,19 +127,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CodingHours">
+  <component name="RunManager" selected="Application.FavoriteNumber">
     <configuration name="CodingHours" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodingHours" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HelloOthers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloOthers" />
+    <configuration name="FavoriteNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FavoriteNumber" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HumptyDumpty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HumptyDumpty" />
+    <configuration name="HelloOthers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloOthers" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -195,19 +195,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.HumptyDumpty" />
       <item itemvalue="Application.HelloOthers" />
       <item itemvalue="Application.IntroduceYourself" />
       <item itemvalue="Application.TwoNumbers" />
       <item itemvalue="Application.CodingHours" />
+      <item itemvalue="Application.FavoriteNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FavoriteNumber" />
         <item itemvalue="Application.CodingHours" />
         <item itemvalue="Application.TwoNumbers" />
         <item itemvalue="Application.IntroduceYourself" />
         <item itemvalue="Application.HelloOthers" />
-        <item itemvalue="Application.HumptyDumpty" />
       </list>
     </recent_temporary>
   </component>
