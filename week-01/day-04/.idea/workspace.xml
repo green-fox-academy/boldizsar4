@@ -12,11 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MileToKmConverter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MileToKmConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimalsAndLegs.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AnimalsAndLegs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/SecondsADay.java" />
         <option value="$PROJECT_DIR$/src/HelloUser.java" />
         <option value="$PROJECT_DIR$/src/MileToKmConverter.java" />
+        <option value="$PROJECT_DIR$/src/AnimalsAndLegs.java" />
       </list>
     </option>
   </component>
@@ -121,7 +134,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MileToKmConverter">
+  <component name="RunManager" selected="Application.AnimalsAndLegs">
+    <configuration name="AnimalsAndLegs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnimalsAndLegs" />
+      <module name="day-04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="HelloUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloUser" />
       <module name="day-04" />
@@ -134,11 +152,6 @@
     </configuration>
     <configuration name="SecondsADay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SecondsADay" />
-      <module name="day-04" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Swap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Swap" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -189,19 +202,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Swap" />
       <item itemvalue="Application.VariableMutation" />
       <item itemvalue="Application.SecondsADay" />
       <item itemvalue="Application.HelloUser" />
       <item itemvalue="Application.MileToKmConverter" />
+      <item itemvalue="Application.AnimalsAndLegs" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnimalsAndLegs" />
         <item itemvalue="Application.MileToKmConverter" />
         <item itemvalue="Application.HelloUser" />
         <item itemvalue="Application.SecondsADay" />
         <item itemvalue="Application.VariableMutation" />
-        <item itemvalue="Application.Swap" />
       </list>
     </recent_temporary>
   </component>
@@ -217,16 +230,15 @@
       <updated>1525973877091</updated>
       <workItem from="1525973882610" duration="8208000" />
       <workItem from="1526014395381" duration="1370000" />
-      <workItem from="1526020269977" duration="6160000" />
+      <workItem from="1526020269977" duration="7180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15738000" />
+    <option name="totallyTimeSpent" value="16758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -413,7 +425,17 @@
     <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnimalsAndLegs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
