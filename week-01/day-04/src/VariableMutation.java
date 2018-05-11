@@ -17,10 +17,7 @@ public class VariableMutation {
         System.out.println(d);
 //
         int e = 8;
-        int i = 8;
-        int j = 8;
-        e = e * i * j;
-        System.out.println(e);
+        System.out.println(e * e * e);
 //
         int f1 = 123;
         int f2 = 345;
@@ -48,14 +45,13 @@ public class VariableMutation {
         }
 //
         int h = 135798745;
-        boolean divise = true;
-        boolean notDivise = false;
+        boolean yes = true;
+        boolean no = false;
 
         if (h % 11 != 0) {
-            h %= 11;
-            System.out.println(divise);
+            System.out.println(no);
         } else {
-            System.out.println(notDivise);
+            System.out.println(yes);
         }
 
 // tell if i1 is higher than i2 squared and smaller than i2 cubed
@@ -81,5 +77,19 @@ public class VariableMutation {
 // tell if j is dividable by 3 or 5 (print as a boolean)
 
         int j = 1521;
+        boolean okay = true;
+        boolean notOkay = false;
+
+        if (j % 3 ==0) {
+            System.out.println(okay);
+        } else {
+            System.out.println(notOkay);
+        }
+        if (j % 5 == 0) {
+            System.out.println(okay);
+        } else {
+            System.out.println(notOkay);
+        }
+
     }
 }
