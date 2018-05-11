@@ -12,41 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MileToKmConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MileToKmConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimalsAndLegs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AnimalsAndLegs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AverageOfInput.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AverageOfInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AverageOfInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="241">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HelloUser.java">
+      <file leaf-file-name="OddEven.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OddEven.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="231">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -82,6 +61,7 @@
         <option value="$PROJECT_DIR$/src/MileToKmConverter.java" />
         <option value="$PROJECT_DIR$/src/AnimalsAndLegs.java" />
         <option value="$PROJECT_DIR$/src/AverageOfInput.java" />
+        <option value="$PROJECT_DIR$/src/OddEven.java" />
       </list>
     </option>
   </component>
@@ -144,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AverageOfInput">
+  <component name="RunManager" selected="Application.OddEven">
     <configuration name="AnimalsAndLegs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalsAndLegs" />
       <module name="day-04" />
@@ -165,8 +145,8 @@
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="SecondsADay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SecondsADay" />
+    <configuration name="OddEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OddEven" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -212,19 +192,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SecondsADay" />
       <item itemvalue="Application.HelloUser" />
       <item itemvalue="Application.MileToKmConverter" />
       <item itemvalue="Application.AnimalsAndLegs" />
       <item itemvalue="Application.AverageOfInput" />
+      <item itemvalue="Application.OddEven" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OddEven" />
         <item itemvalue="Application.AverageOfInput" />
         <item itemvalue="Application.AnimalsAndLegs" />
         <item itemvalue="Application.MileToKmConverter" />
         <item itemvalue="Application.HelloUser" />
-        <item itemvalue="Application.SecondsADay" />
       </list>
     </recent_temporary>
   </component>
@@ -240,12 +220,12 @@
       <updated>1525973877091</updated>
       <workItem from="1525973882610" duration="8208000" />
       <workItem from="1526014395381" duration="1370000" />
-      <workItem from="1526020269977" duration="10066000" />
+      <workItem from="1526020269977" duration="10908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19644000" />
+    <option name="totallyTimeSpent" value="20486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -261,7 +241,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989259" visible="true" weight="0.32992035" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989259" visible="true" weight="0.3060296" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -452,8 +432,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AverageOfInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="241">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OddEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
     </entry>
