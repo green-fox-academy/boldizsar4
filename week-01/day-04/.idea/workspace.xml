@@ -109,12 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VariableMutation">
-    <configuration name="BMI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BMI" />
-      <module name="day-04" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="Application.SecondsADay">
     <configuration name="DefineBasicInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DefineBasicInfo" />
       <module name="day-04" />
@@ -122,6 +117,11 @@
     </configuration>
     <configuration name="IfExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IfExample" />
+      <module name="day-04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="SecondsADay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SecondsADay" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -178,18 +178,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Swap" />
-      <item itemvalue="Application.BMI" />
       <item itemvalue="Application.DefineBasicInfo" />
       <item itemvalue="Application.VariableMutation" />
       <item itemvalue="Application.IfExample" />
+      <item itemvalue="Application.SecondsADay" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SecondsADay" />
         <item itemvalue="Application.VariableMutation" />
         <item itemvalue="Application.Swap" />
         <item itemvalue="Application.IfExample" />
         <item itemvalue="Application.DefineBasicInfo" />
-        <item itemvalue="Application.BMI" />
       </list>
     </recent_temporary>
   </component>
