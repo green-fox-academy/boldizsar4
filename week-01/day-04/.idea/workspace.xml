@@ -120,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrintEven">
+  <component name="RunManager" selected="Application.MultiplicationTable">
     <configuration name="AverageOfInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AverageOfInput" />
       <module name="day-04" />
@@ -131,13 +131,13 @@
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="PartyIndicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PartyIndicator" />
+    <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiplicationTable" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="PrintBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrintBigger" />
+    <configuration name="PartyIndicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PartyIndicator" />
       <module name="day-04" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -189,18 +189,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.AverageOfInput" />
-      <item itemvalue="Application.PrintBigger" />
       <item itemvalue="Application.PartyIndicator" />
       <item itemvalue="Application.IWontCheatOnTheExam" />
       <item itemvalue="Application.PrintEven" />
+      <item itemvalue="Application.MultiplicationTable" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MultiplicationTable" />
         <item itemvalue="Application.PrintEven" />
         <item itemvalue="Application.IWontCheatOnTheExam" />
         <item itemvalue="Application.AverageOfInput" />
         <item itemvalue="Application.PartyIndicator" />
-        <item itemvalue="Application.PrintBigger" />
       </list>
     </recent_temporary>
   </component>
