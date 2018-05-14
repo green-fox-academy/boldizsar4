@@ -4,7 +4,6 @@ public class FunctionExamples {
         float average = average(numbers);
         System.out.println(average);
     }
-
     public static float average(int[] numbers) {
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
