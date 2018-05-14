@@ -7,17 +7,13 @@ public class FunctionExamples2 {
 
         int n = 3;
         n = increaseNumber(n);
-        increaseElements(numbers);
+       //ncreaseElements(numbers);
+
+        // helloUser("Pisti");
 
         String appl = "alm";
         appendA(appl);
-        System.out.println(appl);
-
-        String apple = appl + "a";
-        System.out.println(apple);
-
-        String appl2 = "alm";
-        String apple2 = "alma";
+         printUntil3(numbers);
 
         if (appl + "a" == "alm"){
             System.out.println("yepp");
@@ -25,6 +21,16 @@ public class FunctionExamples2 {
             System.out.println("nope");
         }
 
+    }
+    public static void printUntil3(int[] numbers){
+        for (int number : numbers){
+            System.out.println(number);
+            if (number == 3) {
+            return;
+        }
+    }
+    public static void helloUser(String userName){
+        System.out.println("Hello " + userName);
     }
     public static String appendA(String text){
         return text + "a";
