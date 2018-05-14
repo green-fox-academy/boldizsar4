@@ -7,10 +7,24 @@ public class FunctionExamples2 {
 
         int n = 3;
         n = increaseNumber(n);
-        System.out.println(n);
-
         increaseElements(numbers);
-        System.out.println(Arrays.toString(numbers));
+
+        String appl = "alm";
+        appendA(appl);
+        System.out.println(appl);
+
+        String apple = appl + "a";
+        System.out.println(apple);
+
+        String appl2 = "alm";
+        String apple2 = "alma";
+
+        if (appl + "a" == "alm"){
+            System.out.println("yepp");
+        } else {
+            System.out.println("nope");
+        }
+
     }
     public static String appendA(String text){
         return text + "a";
