@@ -6,7 +6,7 @@ import java.util.List;
 public class PrintEach {
     public static void main(String[] args) {
         try {
-            Path filepath = Paths.get("myfile.txt");
+            Path filepath = Paths.get("src/myfile");
             List<String> lines = Files.readAllLines(filepath);
             System.out.println(lines.size());
         } catch (Exception e) {
