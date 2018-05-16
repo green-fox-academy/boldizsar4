@@ -8,7 +8,7 @@ public class PrintEach {
         try {
             Path filepath = Paths.get("myfile.txt");
             List<String> lines = Files.readAllLines(filepath);
-            System.out.println(lines.get(0));
+            System.out.println(lines.size());
         } catch (Exception e) {
         }
         System.out.println("unable to read file: myfile.txt");
