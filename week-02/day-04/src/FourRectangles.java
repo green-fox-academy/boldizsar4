@@ -10,9 +10,9 @@ public class FourRectangles {
         int y = 10;
         int width = (int) (Math.random() * 201);
         int height = (int) (Math.random() * 201);
-        int r = (int) (Math.random()*256);
-        int g = (int) (Math.random()*256);
-        int b = (int) (Math.random()*256);
+        int r = (int) (Math.random()*63);
+        int g = (int) (Math.random()*63);
+        int b = (int) (Math.random()*63);
         for (int i = 1; i < 5; i++) {
             graphics.setColor(new Color(r*i,g*i,b*i,255));
             graphics.fillRect(x*i,y*i,width*i,height*i);
