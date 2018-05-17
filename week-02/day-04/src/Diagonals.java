@@ -4,24 +4,24 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class MiddleLines {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
-            graphics.setColor(Color.RED);
-            graphics.drawLine(0,160,320,160);
-            graphics.setColor(Color.GREEN);
-            graphics.drawLine(160,0,160,343);
+public class Diagonals {
+    public static void mainDraw(Graphics graphics) {
+        // Draw the canvas' diagonals.
+        // If it starts from the upper-left corner it should be green, otherwise it should be red.
+graphics.setColor(Color.GREEN);
+graphics.drawLine(0,0,300,400);
 
+graphics.setColor(Color.RED);
+graphics.drawLine(20,40,200,356);
     }
 
     // Don't touch the code below
-    static int WIDTH = 320;
-    static int HEIGHT = 343;
+    static int WIDTH = 400;
+    static int HEIGHT = 400;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
-        jFrame.setSize(new Dimension(WIDTH, HEIGHT));
+        jFrame.setSize(new Dimension(WIDTH, HEIGHT + 23));
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
         jFrame.add(new ImagePanel());
         jFrame.setLocationRelativeTo(null);
