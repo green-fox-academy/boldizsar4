@@ -15,7 +15,7 @@ public class FourRectangles {
         int b = (int) (Math.random()*256);
         for (int i = 1; i < 5; i++) {
             graphics.setColor(new Color(r*i,g*i,b*i,255));
-            graphics.drawRect(x*i,y*i,width*i,height*i);
+            graphics.fillRect(x*i,y*i,width*i,height*i);
 
         }
     }
