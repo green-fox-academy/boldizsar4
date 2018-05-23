@@ -5,5 +5,4 @@ public class MainPI {
         PostIt example2 = new PostIt("pink","awesome","black");
         PostIt example3 = new PostIt("yellow","superb","green");
     }
-
 }
