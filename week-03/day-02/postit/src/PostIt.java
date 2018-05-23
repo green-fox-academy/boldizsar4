@@ -9,5 +9,5 @@ public PostIt(String b,String t,String tC){
     backgroundColor = b;
     text = t;
     textColor = tC;
-}
+    }
 }
