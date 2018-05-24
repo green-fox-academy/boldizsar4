@@ -1,7 +1,7 @@
 public class Power {
     public static void main(String[] args) {
-        int square = power(5,5);
-        System.out.println(square);
+        int result = power(5,5);
+        System.out.println(result);
 
     }
 
