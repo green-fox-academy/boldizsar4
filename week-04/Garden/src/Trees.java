@@ -6,7 +6,7 @@ public class Trees extends Plants {
     super.ABSORBED_WATER_PERCENT = 40;
   }
   @Override
-  protected void watering(int amountOfWater) {
+  public void watering(int amountOfWater) {
     setCurrentWaterAmount((amountOfWater * ABSORBED_WATER_PERCENT)/100);
   }
 }

@@ -47,7 +47,7 @@ public class Plants {
     return false;
   }
 
-  protected void watering(int amountOfWater) {
+  public void watering(int amountOfWater) {
     this.currentWaterAmount += (amountOfWater);
   }
 }

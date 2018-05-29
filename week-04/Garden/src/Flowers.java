@@ -7,7 +7,7 @@ public class Flowers extends Plants {
   }
 
   @Override
-  protected void watering(int amountOfWater) {
+  public void watering(int amountOfWater) {
     setCurrentWaterAmount((amountOfWater * ABSORBED_WATER_PERCENT) / 100);
   }
 }
