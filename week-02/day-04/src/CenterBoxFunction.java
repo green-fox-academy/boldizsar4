@@ -14,7 +14,10 @@ squareDrawing(graphics,size);
     }
     public static void squareDrawing(Graphics graphics,int size){
         for (int i = 1; i < 4; i++) {
-            graphics.setColor(new Color(0,20,30,150));
+            int r = (int) (Math.random() * 256);
+            int g = (int) (Math.random() * 256);
+            int b = (int) (Math.random() * 256);
+            graphics.setColor(new Color(r,g,b,100));
             graphics.fillRect((WIDTH/2) - (size/2),(HEIGHT/2)-(size/2), size*i, size*i);
         }
     }

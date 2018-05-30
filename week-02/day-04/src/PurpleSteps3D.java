@@ -19,8 +19,8 @@ public class PurpleSteps3D {
     }
 
     // Don't touch the code below
-    static int WIDTH = 400;
-    static int HEIGHT = 400;
+    static int WIDTH = 800;
+    static int HEIGHT = 800;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
