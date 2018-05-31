@@ -18,7 +18,7 @@ public class CountLetters {
         if (string.charAt(i) == character[j]) {
           found++;
         } if (found == 1) {
-          System.out.println(string.charAt(i) + " : " + count);
+          System.out.println(string.charAt(i) + " : " + found);
         }
       }
     }
