@@ -13,11 +13,11 @@ public class CountLettersTest {
   }
 
   @Test
-  public void should_return(){
+  public void should_return_the_numberOfLetters(){
     String s1 = "aaaaa";
     int expectedresult = 5;
-    int[] result = counting.countingLetters(s1);
 
-    assertEquals(expectedresult,result);
+    assertEquals(expectedresult,s1);
+
   }
 }
