@@ -2,21 +2,26 @@ import java.util.Arrays;
 
 public class Anagram {
 
-  public boolean isAnagram(String s1, String s2){
-    if (s1.length() != s2.length()){
+  public static boolean isAnagram(String string1, String string2) {
+    if (string1.length() != string2.length()) {
       return false;
     }
-    s1 = s1.toLowerCase();
-    s2 = s2.toLowerCase();
+    if (string1.length() == 0 && string2.length() == 0){
+      return false;
+    }
+      string1 = string1.toLowerCase();
+      string2 = string2.toLowerCase();
 
-    char[] s12 = s1.toCharArray();
-    char[] s22 = s2.toCharArray();
+      char[] s12 = string1.toCharArray();
+      char[] s22 = string2.toCharArray();
 
-    Arrays.sort(s12);
-    Arrays.sort(s22);
+      Arrays.sort(s12);
+      Arrays.sort(s22);
 
-    String s3 = new String(s12);
-    String s4 = new String(s22);
-    return s3.equals(s4);
+     String string3 = new String(s12);
+     String string4 = new String(s22);
+
+      return string3.equals(string4);
+    }
   }
-}
+
