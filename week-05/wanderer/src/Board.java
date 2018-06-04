@@ -8,13 +8,11 @@ public class Board extends JComponent implements KeyListener {
   int testBoxX;
   int testBoxY;
   int size = 72;
-  PositionedImage heroDown = new PositionedImage("assets/hero-down.png", 0, 0);
-  PositionedImage heroUp = new PositionedImage("assets/hero-up.png", 0, 0);
-  PositionedImage heroLeft = new PositionedImage("assets/hero-left.png", 0, 0);
-  PositionedImage heroRight = new PositionedImage("assets/hero-right.png", 0, 0);
+  Hero hero;
+
 
   public Board() {
-
+    hero = new Hero();
     wall = new Map();
 
     setPreferredSize(new Dimension(720, 720));
@@ -36,6 +34,8 @@ public class Board extends JComponent implements KeyListener {
         }
       }
     }
+    PositionedImage heroPicture = new PositionedImage(hero.image, hero.posX,hero.posY);
+    heroPicture.draw(graphics);
   }
 
   public static void main(String[] args) {
@@ -55,18 +55,21 @@ public class Board extends JComponent implements KeyListener {
 
   @Override
   public void keyPressed(KeyEvent e) {
-
   }
 
   public void keyReleased(KeyEvent e) {
     if (e.getKeyCode() == KeyEvent.VK_UP) {
-      heroUp.posY -= 72;
+      hero.posY -= 72;
+      hero.heroUp();
     } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-      heroDown.posY += 72;
+      hero.posY += 72;
+      hero.heroDown();
     } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-      heroRight.posX += 72;
+      hero.posX += 72;
+      hero.heroRight();
     } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-      heroLeft.posX -= 72;
+      hero.posX -= 72;
+      hero.heroLeft();
     }
     repaint();
   }
