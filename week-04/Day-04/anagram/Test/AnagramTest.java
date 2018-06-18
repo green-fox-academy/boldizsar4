@@ -21,7 +21,7 @@ public class AnagramTest {
   }
 
   @Test
-  public void should_returnTrue_when_stringIsAnagram(){
+  public void should_returnTrue_when_useUpperCase(){
     String s1 = "Tar";
     String s2 = "rat";
     Assert.assertTrue(anagram.isAnagram(s1,s2));
@@ -35,10 +35,9 @@ public class AnagramTest {
   }
 
   @Test
-  public void sévjspdfks(){
+  public void should_returnFalse_when_stringInputEmpty(){
     String s1 = "";
     String s2 = "";
     assertFalse(anagram.isAnagram(s1,s2));
   }
   }
-
