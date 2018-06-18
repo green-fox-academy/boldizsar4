@@ -8,5 +8,4 @@ public class Exercise1 {
             .forEach(System.out::println);
   }
 }
-
   //Write a Stream Expression to get the even numbers from the following array:
