@@ -30,8 +30,8 @@ tbody tr:nth-child(even) {
 
 th {
     background: black;
-    font-size: 30px;
     font-weight: normal;
+    font-size: 30px;
     color: rgb(165, 165, 165)
 }
 
