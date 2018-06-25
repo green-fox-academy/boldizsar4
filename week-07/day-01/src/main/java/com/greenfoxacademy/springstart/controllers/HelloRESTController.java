@@ -13,9 +13,9 @@ public class HelloRESTController {
 Greeting greeting;
 private AtomicLong idCounter = new AtomicLong();
 
-@RequestMapping(value = "/greeting")
+  @RequestMapping("/greeting")
 public Greeting greeting(@RequestParam(value = "name", defaultValue = "world") String name){
-    greeting = new Greeting(idCounter.getAndIncrement(), "hello " + name);
+    greeting = new Greeting(idCounter.incrementAndGet(), "hello " + name);
     return greeting;
   }
 }
