@@ -2,8 +2,8 @@ package com.greenfoxacademy.helloworld;
 
 public class Greeting {
 
-  private long id = 1;
-  private String content = "Hello World!";
+  private long id;
+  private String content;
 
   public long getId() {
     return id;
@@ -13,7 +13,7 @@ public class Greeting {
     return content;
   }
   public Greeting(long id, String content){
-    id = this.id;
-    content = this.content;
+    this.id = id;
+    this.content = content;
   }
 }
