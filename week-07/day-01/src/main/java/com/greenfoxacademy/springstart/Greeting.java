@@ -21,4 +21,8 @@ public class Greeting {
     this.id = id;
     this.content = content;
   }
+
+  public Greeting(String content){
+    this.content = content;
+  }
 }
