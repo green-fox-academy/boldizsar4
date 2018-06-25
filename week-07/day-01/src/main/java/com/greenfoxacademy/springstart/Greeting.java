@@ -9,6 +9,10 @@ public class Greeting {
     return id;
   }
 
+  public long setId(long id) {
+    return this.id++;
+  }
+
   public String getContent() {
     return content;
   }
