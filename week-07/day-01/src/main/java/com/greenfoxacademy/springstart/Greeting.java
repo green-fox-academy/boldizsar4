@@ -1,5 +1,7 @@
 package com.greenfoxacademy.springstart;
 
+import java.util.Random;
+
 public class Greeting {
 
   private long id;

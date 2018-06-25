@@ -18,5 +18,6 @@ public Greeting greeting(@RequestParam(value = "name", defaultValue = "world") S
     greeting = new Greeting(idCounter.incrementAndGet(), "hello " + name);
     return greeting;
   }
+
 }
 
