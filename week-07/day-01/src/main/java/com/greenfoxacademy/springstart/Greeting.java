@@ -1,4 +1,4 @@
-package com.greenfoxacademy.helloworld;
+package com.greenfoxacademy.springstart;
 
 public class Greeting {
 
@@ -12,6 +12,7 @@ public class Greeting {
   public String getContent() {
     return content;
   }
+
   public Greeting(long id, String content){
     this.id = id;
     this.content = content;

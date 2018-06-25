@@ -1,4 +1,4 @@
-package com.greenfoxacademy.helloworld;
+package com.greenfoxacademy.springstart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-public class HelloworldApplication {
-
+public class springStart {
   public static void main(String[] args) {
-    SpringApplication.run(HelloworldApplication.class, args);
+    SpringApplication.run(springStart.class, args);
   }
+
 @RequestMapping(value = "/hello")
 @ResponseBody
   public String hello(){
     return "Hello World!";
   }
-
 }
