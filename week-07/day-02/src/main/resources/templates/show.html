@@ -6,6 +6,12 @@
     <title>Bank Of Simba</title>
 </head>
 <body>
-    <h1 th:text="${account.name} + ', ' + ${account.balance} + ', ' + ${account.animalType}"></h1>
+    <h1 th:text="${account.name}
+    + ', '
+    + ${#numbers.formatDecimal(account.balance, 0, 'COMMA', 2, 'POINT')}
+    + ' '
+    + ${account.currency}
+    + ', '
+    + ${account.animalType}"></h1>
 </body>
 </html>

@@ -4,13 +4,15 @@ public class BankAccount {
 
   private String name;
   private int balance;
+  private String currency;
   private String animalType;
 
 public BankAccount(){}
 
-  public BankAccount(String name, int balance, String animalType) {
+  public BankAccount(String name, int balance, String currency, String animalType) {
     this.name = name;
     this.balance = balance;
+    this.currency = currency;
     this.animalType = animalType;
   }
 
@@ -28,6 +30,14 @@ public BankAccount(){}
 
   public void setBalance(int balance) {
     this.balance = balance;
+  }
+
+  public String getCurrency() {
+    return currency;
+  }
+
+  public void setCurrency(String currency) {
+    this.currency = currency;
   }
 
   public String getAnimalType() {
