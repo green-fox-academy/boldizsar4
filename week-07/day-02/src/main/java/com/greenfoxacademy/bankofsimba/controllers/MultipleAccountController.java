@@ -3,7 +3,7 @@ package com.greenfoxacademy.bankofsimba.controllers;
 import com.greenfoxacademy.bankofsimba.models.BankAccount;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,5 +26,18 @@ public class MultipleAccountController {
   public String characterTable(Model model){
     model.addAttribute("characterlist", characters);
     return "multiple";
+  }
+
+  @PostMapping("/charactertable")
+  public String raise(@ModelAttribute BankAccount accounts, Model model){
+    for (BankAccount account : characters) {
+      if (account.isKing()) {
+        account.setBalance(account.getBalance() + 100);
+      } else {
+        account.setBalance(account.getBalance() + 10);
+      }
+    }
+    model.addAttribute("accountlist", characters);
+    return "redirect:/charactertable";
   }
 }

@@ -15,6 +15,7 @@
         <th>Balance</th>
         <th>Animaltype</th>
         <th>valami</th>
+        <th>Raise Balance</th>
     </tr>
     <tbody>
     <tr th:each="character : ${characterlist}">
@@ -25,6 +26,10 @@
         <td th:text="${character.balance} + ' ' + ${character.currency}"></td>
         <td th:text="${character.animalType}"></td>
         <td th:text="${character.characterType}"></td>
+        <td>
+            <form action="button" th:action="@{charactertable}" method="post" th:object="${character}"/>
+            <input type="submit" value="Raise balance" />
+        </td>
     </tr>
     </thead>
 </table>
