@@ -9,17 +9,20 @@
 <table>
     <thead>
     <tr>
+        <th>Index</th>
+        <th>King</th>
         <th>Name</th>
         <th>Balance</th>
         <th>Animaltype</th>
-        <th>Index</th>
     </tr>
     <tbody>
     <tr th:each="character : ${characterlist}">
+        <td th:text="${characterStat.index}"></td>
+        <td th:if="${character.king}" th:text="yes" style="background-color: aqua"></td>
+        <td th:unless="${character.king}" th:text="no"></td>
         <td th:text="${character.name}"></td>
         <td th:text="${character.balance} + ' ' + ${character.currency}"></td>
         <td th:text="${character.animalType}"></td>
-        <td th:text="${characterStat.index}"></td>
     </tr>
     </thead>
 </table>
