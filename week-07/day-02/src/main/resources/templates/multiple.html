@@ -12,12 +12,14 @@
         <th>Name</th>
         <th>Balance</th>
         <th>Animaltype</th>
+        <th>Index</th>
     </tr>
     <tbody>
     <tr th:each="character : ${characterlist}">
         <td th:text="${character.name}"></td>
-        <td th:text="${character.balance} + ' ' + ${character.currency}" ></td>
+        <td th:text="${character.balance} + ' ' + ${character.currency}"></td>
         <td th:text="${character.animalType}"></td>
+        <td th:text="${characterStat.index}"></td>
     </tr>
     </thead>
 </table>
