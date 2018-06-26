@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Multiple Accounts</title>
+    <link rel="stylesheet" href="/css/multiple.css" />
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Animaltype</th>
+    </tr>
+    <tbody>
+    <tr th:each="character : ${characterlist}">
+        <td th:text="${character.name}"></td>
+        <td th:text="${character.balance} + ' ' + ${character.currency}" ></td>
+        <td th:text="${character.animalType}"></td>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
