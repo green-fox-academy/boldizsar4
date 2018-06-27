@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class WebapplicationApplication implements CommandLineRunner {
-  
+
   @Autowired
   Printer printer;
   @Autowired
