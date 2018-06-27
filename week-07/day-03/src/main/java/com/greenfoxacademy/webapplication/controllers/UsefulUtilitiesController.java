@@ -16,7 +16,8 @@ public class UsefulUtilitiesController {
 
   @GetMapping("/useful")
   public String link(Model model){
-    model.addAttribute("utilities", "Colored Background");
+    model.addAttribute("bgcolor", "Colored Background");
+    model.addAttribute("email", "Email");
     return "useful";
   }
 
