@@ -7,25 +7,15 @@ public class BankAccount {
   private String currency;
   private String animalType;
   private boolean king;
-  private String characterType;
 
-public BankAccount(){}
+  public BankAccount(){}
 
-  public BankAccount(String name, int balance, String currency, String animalType, boolean king, String characterType) {
+  public BankAccount(String name, int balance, String currency, String animalType, boolean king) {
     this.name = name;
     this.balance = balance;
     this.currency = currency;
     this.animalType = animalType;
     this.king = king;
-    this.characterType = characterType;
-  }
-
-  public String getCharacterType() {
-    return characterType;
-  }
-
-  public void setCharacterType(String characterType) {
-    this.characterType = characterType;
   }
 
   public boolean isKing() {

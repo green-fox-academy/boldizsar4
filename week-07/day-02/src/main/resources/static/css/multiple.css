@@ -1,3 +1,6 @@
+body {
+    background: aliceblue;
+}
 table {
     border-collapse: collapse;
     margin-left: 50px;
@@ -11,4 +14,18 @@ th, td {
     padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+th {
+    background: black;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgb(165, 165, 165);
+}
+
+td {
+    background: aliceblue;
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
 }
