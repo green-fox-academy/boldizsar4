@@ -34,4 +34,18 @@ public class UsefulUtilitiesController {
     model.addAttribute("emailToCheck", emailCheck);
     return "email";
   }
+
+  @GetMapping("useful/encode")
+  public String caesarEncode(@RequestParam(name = "text") String text,
+                       @RequestParam(name = "number") int number, Model model) {
+    model.addAttribute("codedtext", utilityService.caesar(text,number));
+    return "caesar";
+  }
+
+  @GetMapping("useful/decode")
+  public String caesarDecode(@RequestParam(name = "text") String text,
+                             @RequestParam(name = "number") int number, Model model){
+    model.addAttribute("codedtext", utilityService.caesar(text,-number));
+    return "caesar";
+  }
 }

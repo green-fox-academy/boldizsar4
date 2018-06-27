@@ -11,7 +11,11 @@ a{
 
 form {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 10px;
     font-size: 30px;
     color: cadetblue;
+}
+legend {
+    text-align: center;
+    font-size: 30px;
 }

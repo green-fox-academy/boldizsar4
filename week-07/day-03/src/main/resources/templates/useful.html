@@ -10,10 +10,36 @@
     <form action="useful/colored">
         <input type="submit" th:value="${bgcolor}" />
     </form>
+
     <form action="useful/email?email=" + name>
         Test your e-mail:
         <input type="text" name="email" value="example@example.com" size="40">
     </form>
-        <a href="http://localhost:8080/useful/caesar"><p th:text="${encoder}"></p></a>
+
+    <form action="encode?encode=" + name>
+        <fieldset>
+            <legend>Caesar Encoding</legend>
+            Message:<br>
+            <input type="text" name="text" value="message">
+            <br>
+            Number:<br>
+            <input type="text" name="number" value="3">
+            <br><br>
+            <input type="submit" value="Encode">
+        </fieldset>
+    </form>
+
+    <form action="decode?decode=" + name>
+        <fieldset>
+            <legend>Caesar decoding</legend>
+            Message:<br>
+            <input type="text" name="text" value="message">
+            <br>
+            Number:<br>
+            <input type="text" name="number" value="3">
+            <br><br>
+            <input type="submit" value="Decode">
+        </fieldset>
+    </form>
     </body>
 </html>
