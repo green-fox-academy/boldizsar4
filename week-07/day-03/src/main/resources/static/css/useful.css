@@ -1,10 +1,17 @@
 body {
     background: aliceblue;
 }
-a {
+a{
     text-align: center;
-    margin-top: 50px;
     font-family: sans-serif;
+    font-size: 25px;
+    color: cadetblue;
+    margin-top: 100px;
+}
+
+form {
+    text-align: center;
+    padding: 40px 20px;
     font-size: 30px;
     color: cadetblue;
 }

@@ -6,7 +6,14 @@
         <link rel="stylesheet" href="/css/useful.css" />
     </head>
     <body>
-        <a href="http://localhost:8080/useful/colored"><p th:text="${bgcolor}"></p></a>
-        <a href="http://localhost:8080/useful/email"><p th:text="${email}"></p></a>
+
+    <form action="useful/colored">
+        <input type="submit" th:value="${bgcolor}" />
+    </form>
+    <form action="useful/email?email=" + name>
+        Test your e-mail:
+        <input type="text" name="email" value="example@example.com" size="40">
+    </form>
+        <a href="http://localhost:8080/useful/caesar"><p th:text="${encoder}"></p></a>
     </body>
 </html>

@@ -18,6 +18,7 @@ public class UsefulUtilitiesController {
   public String link(Model model){
     model.addAttribute("bgcolor", "Colored Background");
     model.addAttribute("email", "Email");
+    model.addAttribute("encoder", "Caesar Encoder");
     return "useful";
   }
 
