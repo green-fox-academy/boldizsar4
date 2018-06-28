@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="/css/nutrition.css" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="/nutrition.css"/>
+    <title>Fox Club</title>
 </head>
 <body>
-
+<h1 th:text="| Change ${fox.name} 's diet! |">.</h1>
+<table>
+    <form th:action="@{/profile/addnutrition}" th:object="${fox}" method="post">
+        <tr>
+            <th>Food</th>
+            <td>
+                <select id="food" th:field="${fox.food}">
+                    <option th:each="food : ${fox.foodlist}"
+                            th:value="${food}"
+                            th:text="${food}">Food</option>
+                </select>
+            </td>
+            <th>Drink</th>
+            <td>
+                <select id="drink" th:field="${fox.drink}">
+                    <option th:each="drink : ${fox.drinklist}"
+                            th:value="${drink}"
+                            th:text="${drink}">Drink</option>
+                </select>
+            </td>
+            <td><input type="submit" value="change"/></td>
+        </tr>
+    </form>
+</table>
 </body>
 </html>

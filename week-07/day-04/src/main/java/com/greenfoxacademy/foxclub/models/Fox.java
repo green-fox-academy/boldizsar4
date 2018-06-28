@@ -23,6 +23,22 @@ public class Fox {
     this.name = name;
   }
 
+  public ArrayList<String> getFoodlist() {
+    return foodlist;
+  }
+
+  public void setFoodlist(ArrayList<String> foodlist) {
+    this.foodlist = foodlist;
+  }
+
+  public ArrayList<String> getDrinklist() {
+    return drinklist;
+  }
+
+  public void setDrinklist(ArrayList<String> drinklist) {
+    this.drinklist = drinklist;
+  }
+
   public ArrayList<String> getTricks() {
     return tricks;
   }
