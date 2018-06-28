@@ -1,21 +1,36 @@
-body {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
     background: aliceblue;
 }
-a{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 25px;
-    color: cadetblue;
-    margin-top: 100px;
+
+input {
+    outline: none;
+    border: none;
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 25px;
 }
 
 form {
     text-align: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
     font-size: 30px;
     color: cadetblue;
 }
-legend {
-    text-align: center;
-    font-size: 30px;
+
+fieldset {
+    padding: 10px 10px;
+}
+
+div {
+    color: cornflowerblue;
 }
