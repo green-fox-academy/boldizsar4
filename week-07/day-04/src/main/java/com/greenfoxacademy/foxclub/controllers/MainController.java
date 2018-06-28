@@ -1,14 +1,17 @@
 package com.greenfoxacademy.foxclub.controllers;
 
+import com.greenfoxacademy.foxclub.models.Fox;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
-
+@Autowired
+Fox fox;
 
   @GetMapping("")
   public String renderLoginPage(){
@@ -23,5 +26,12 @@ public class MainController {
   @PostMapping("")
   public String login(@RequestParam(name = "username") String username){
     return "redirect:/profile/" + username;
+  }
+
+  @GetMapping("/nutrition")
+  public String nutrition(Model model){
+    model.addAttribute("fox", fox);
+    return "nutrition";
+
   }
 }

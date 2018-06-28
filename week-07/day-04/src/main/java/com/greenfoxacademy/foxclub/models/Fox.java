@@ -1,12 +1,19 @@
 package com.greenfoxacademy.foxclub.models;
 
-import java.util.ArrayList;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+@Service
 public class Fox {
   private String name;
+  private String food;
+  private String drink;
   private ArrayList<String> tricks;
   private ArrayList<Fox> foxes;
-  private String food, drink;
+  private ArrayList<String> foodlist;
+  private ArrayList<String> drinklist;
 
   public String getName() {
     return name;
@@ -25,12 +32,12 @@ public class Fox {
   }
 
   public Fox(){
-    this("Bobi", "pizza", "cola");
-  }
-  public Fox(String name, String food, String drink) {
-    this.name = name;
-    this.food = food;
-    this.drink = drink;
+    this.name = "Bobi";
+    this.food = "salad";
+    this.drink = "whisky";
+    this.tricks = new ArrayList<>(Arrays.asList("Java", "cook", "draw"));
+    this.foodlist = new ArrayList<>(Arrays.asList("pizza", "hamburger", "soup"));
+    this.drinklist = new ArrayList<>(Arrays.asList("water", "cola", "coffee"));
   }
 
   public String getFood() {

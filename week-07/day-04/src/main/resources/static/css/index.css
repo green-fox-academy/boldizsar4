@@ -1,5 +1,6 @@
 body {
 font-family: 'open sans', helvetica, arial, sans;
+    background: lightgray;
 }
 
 ul {
@@ -23,7 +24,6 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
@@ -33,4 +33,13 @@ li a:hover {
 
 li:last-child {
     border-right: none;
+}
+
+img {
+    padding-left: 42%;
+    width: 250px;
+}
+
+h1 {
+    text-align: center;
 }
