@@ -8,12 +8,16 @@
     <body>
     <ul>
         <li><a href="/profile/info">Information</a></li>
-        <li><a href="/profile/tricks">Tricks</a></li>
+        <li><a th:href="@{'/profile/' + ${fox.name} + '/tricks'}">Tricks</a></li>
         <li><a th:href="@{'/profile/' + ${fox.name} + '/nutrition'}" th:text="Nutrition"></a></li>
         <li><a href="http://localhost:8080">Logout</a></li>
     </ul>
         <img src="/greenfox.png">
+    <p th:text="'This is ' +${fox.name}+  '. Currently living on ' +${fox.food}+ ' and ' +${fox.drink}+ ' . He knows ' +${fox.tricks.size()}+ ' tricks. '"></p>
     <h1>Known tricks:</h1>
-    <p th:text="${fox.name}"></p>
+    <ol>
+    <span th:if="${fox.tricks.size()} == 0 " th:text="'you know zero tricks. Go and get learn some tricks'"></span>
+    <li th:each="trick : ${fox.tricks}" th:value="${trick}" th:text="${trick}"></li>
+    </ol>
     </body>
 </html>

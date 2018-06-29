@@ -44,10 +44,21 @@ Fox fox;
   }
 
   @PostMapping("/profile/{username}/addnutrition")
-  public String addnutrition(@PathVariable(value = "username") String name, @ModelAttribute Fox fox,String food, String drink) {
-    fox = foxService.getFox(name);
+  public String addnutrition(@PathVariable(value = "username") String name, String food, String drink) {
     this.fox.setFood(food);
     this.fox.setDrink(drink);
+    return "redirect:/profile/" + name;
+  }
+
+  @GetMapping("/profile/{username}/tricks")
+  public String trick(@PathVariable(value = "username")String name, Model model) {
+    model.addAttribute("fox",foxService.getFox(name));
+    model.addAttribute("username", name);
+    return "tricks";
+  }
+  @PostMapping("/profile/{username}/addtrick")
+  public String addtrick(@PathVariable(value = "username")String name, String trick) {
+    this.fox.addTrick(trick);
     return "redirect:/profile/" + name;
   }
 

@@ -10,6 +10,7 @@ public class Fox {
   private String name;
   private String food;
   private String drink;
+  private String trick;
   private ArrayList<String> tricks;
   private ArrayList<Fox> foxes;
   private ArrayList<String> foodlist;
@@ -17,6 +18,14 @@ public class Fox {
 
   public Fox() {
     this("Bobi");
+  }
+
+  public String getTrick() {
+    return trick;
+  }
+
+  public void setTrick(String trick) {
+    this.trick = trick;
   }
 
   public String getName() {
@@ -55,11 +64,14 @@ public class Fox {
     this.name = name;
     this.food = "salad";
     this.drink = "whisky";
+    this.trick = "java";
     this.tricks = new ArrayList<>(Arrays.asList("Java", "cook", "draw"));
     this.foodlist = new ArrayList<>(Arrays.asList("pizza", "hamburger", "soup"));
     this.drinklist = new ArrayList<>(Arrays.asList("water", "cola", "coffee"));
   }
-
+  public void addTrick(String trick){
+    tricks.add(trick);
+  }
   public String getFood() {
     return food;
   }

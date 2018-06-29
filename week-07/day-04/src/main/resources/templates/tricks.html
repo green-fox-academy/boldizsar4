@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Tricks</title>
+</head>
+<body>
+
+<table>
+    <form action="#" th:action="'/profile/' + ${fox.name} + '/addtrick'" method="post" th:object="${fox}">
+        <tr>
+            <th>Tricks</th>
+            <td>
+                <select id="trick" th:field="${fox.trick}">
+                    <option th:each="trick : ${fox.tricks}"
+                            th:value="${trick}"
+                            th:text="${trick}">Learned Tricks</option>
+                </select>
+            </td>
+            <td><input type="submit" value="Learn"/></td>
+        </tr>
+    </form>
+</table>
+
+<span th:if="${fox.tricks.size()} == 0" th:text="|You know zero tricks. |"></span>
+<span></span>
+<table>
+    <tr th:each="trick, itrStat: ${fox.tricks}" >
+        <td th:text="${itrStat.index + 1}"/>
+        <td th:text="${trick}"/>
+    </tr>
+</table>
+<td each="trick : ${fox.tricks}" th:value="${trick}" th:text=" ${trick}"/>
+</body>
+</html>
