@@ -9,10 +9,11 @@
     <ul>
         <li><a href="/profile/info">Information</a></li>
         <li><a href="/profile/tricks">Tricks</a></li>
-        <li><a href="/profile/nutrition">Nutrition</a></li>
+        <li><a th:href="@{'/profile/' + ${fox.name} + '/nutrition'}" th:text="Nutrition"></a></li>
         <li><a href="http://localhost:8080">Logout</a></li>
     </ul>
         <img src="/greenfox.png">
     <h1>Known tricks:</h1>
+    <p th:text="${fox.name}"></p>
     </body>
 </html>

@@ -6,16 +6,14 @@ import com.greenfoxacademy.foxclub.services.FoxServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class MainController {
 
   private FoxService foxService;
-
+@Autowired
+Fox fox;
   @Autowired
   public MainController(FoxServiceImpl foxService) {
     this.foxService = foxService;
@@ -27,27 +25,30 @@ public class MainController {
   }
 
   @GetMapping("/profile/{username}")
-  public String renderIndexPage(){
+  public String renderIndexPage (@PathVariable(value = "username") String name, Model model){
+    model.addAttribute("fox", foxService.getFox(name));
     return "index";
   }
 
   @PostMapping("/login")
-  public String login(@ModelAttribute(value = "username") String username) {
-    foxService.login(username);
-    return "redirect:/profile/" + username;
+  public String login(@RequestParam(value = "username") String name) {
+    foxService.login(name);
+    return "redirect:/profile/" + name;
   }
 
-  @GetMapping("/profile/nutrition")
-  public String nutrition(Model model){
-    model.addAttribute("fox", fox);
+  @GetMapping("/profile/{username}/nutrition")
+  public String nutrition(@PathVariable(value = "username") String name, Model model){
+    model.addAttribute("fox", foxService.getFox(name));
+    model.addAttribute("username", name);
     return "nutrition";
   }
 
-  @PostMapping("/profile/addnutrition")
-  public String addnutrition(String food, String drink) {
+  @PostMapping("/profile/{username}/addnutrition")
+  public String addnutrition(@PathVariable(value = "username") String name, @ModelAttribute Fox fox,String food, String drink) {
+    fox = foxService.getFox(name);
     this.fox.setFood(food);
     this.fox.setDrink(drink);
-    return "redirect:/profile/{username}";
+    return "redirect:/profile/" + name;
   }
 
 }

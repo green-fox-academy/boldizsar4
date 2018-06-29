@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:actionth="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/css/nutrition.css"/>
@@ -8,7 +8,7 @@
 <body>
 <h1 th:text="| Change ${fox.name} 's diet! |">.</h1>
 <table>
-    <form th:action="@{/profile/addnutrition}" th:object="${fox}" method="post">
+    <form action="#" th:action="'/profile/' + @{username} + '/addnutrition'" th:object="${fox}" th:method="post">
         <tr>
             <th>Food</th>
             <td>
