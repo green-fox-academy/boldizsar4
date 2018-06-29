@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@Service
 public class Fox {
   private String name;
   private String food;
@@ -14,6 +13,9 @@ public class Fox {
   private ArrayList<Fox> foxes;
   private ArrayList<String> foodlist;
   private ArrayList<String> drinklist;
+
+  public Fox(String name) {
+  }
 
   public String getName() {
     return name;

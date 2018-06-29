@@ -1,17 +1,25 @@
 package com.greenfoxacademy.foxclub.controllers;
 
 import com.greenfoxacademy.foxclub.models.Fox;
+import com.greenfoxacademy.foxclub.services.FoxService;
+import com.greenfoxacademy.foxclub.services.FoxServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
-@Autowired
-Fox fox;
+
+  private FoxService foxService;
+
+  @Autowired
+  public MainController(FoxServiceImpl foxService) {
+    this.foxService = foxService;
+  }
 
   @GetMapping("")
   public String renderLoginPage(){
@@ -23,8 +31,9 @@ Fox fox;
     return "index";
   }
 
-  @PostMapping("")
-  public String login(@RequestParam(name = "username") String username){
+  @PostMapping("/login")
+  public String login(@ModelAttribute(value = "username") String username) {
+    foxService.login(username);
     return "redirect:/profile/" + username;
   }
 
@@ -40,4 +49,5 @@ Fox fox;
     this.fox.setDrink(drink);
     return "redirect:/profile/{username}";
   }
+
 }
