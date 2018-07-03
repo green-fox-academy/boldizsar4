@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
 @RequestMapping("/todo")
 public class TodoController {
@@ -17,10 +18,7 @@ public class TodoController {
 
   @GetMapping(value = {"/", "/list"})
   public String list (Model model) {
-    model.addAttribute("todo", new Todo("Start the day"));
-    model.addAttribute("todo1", new Todo("Finish H2 workshop1"));
-    model.addAttribute("todo2", new Todo("Finish JPA workshop2"));
-    model.addAttribute("todo3", new Todo("Create a CRUD project"));
+    model.addAttribute("todos", todoRepository.findAll());
     return "todoslist";
   }
 }
