@@ -1,7 +1,7 @@
-package com.greenfoxacademy.todospring;
+package com.greenfoxacademy.connectionwithmysql;
 
-import com.greenfoxacademy.todospring.models.Todo;
-import com.greenfoxacademy.todospring.repositories.TodoRepository;
+import com.greenfoxacademy.connectionwithmysql.models.Todo;
+import com.greenfoxacademy.connectionwithmysql.repositories.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -21,8 +21,9 @@ public TodospringApplication(TodoRepository todoRepository){
 
   @Override
   public void run(String... args) throws Exception {
-    todoRepository.save(new Todo("I have to learn Object Relational Mapping"));
-    todoRepository.save(new Todo("Evo a király"));
-
+    todoRepository.save(new Todo("I have to learn Object Relational Mapping", false,true));
+    todoRepository.save(new Todo("Evo a király", true, false));
+    todoRepository.save(new Todo("Going to car service", false, true));
+    todoRepository.save(new Todo("Buy food", false, false));
   }
 }
