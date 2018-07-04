@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Done Todos</title>
+</head>
+<body>
+<h1>Actibe todos for today:</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Done</th>
+        <th>Urgent</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="todo : ${done}">
+        <td th:text="${todo.id}"/>
+        <td th:text="${todo.title}"/>
+        <td th:text="${todo.done}"/>
+        <td th:text="${todo.urgent}"/>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
