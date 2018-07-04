@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:action="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
         <title>Todos</title>
     </head>
     <body>
@@ -24,6 +24,12 @@
                 <td th:text="${todo.title}"/>
                 <td th:text="${todo.done}"/>
                 <td th:text="${todo.urgent}"/>
+                <td>
+                <form action="/todo/delete" method="POST">
+                    <input type="hidden" name="id" th:value="${todo.id}">
+                    <input type="submit" value="delete"/>
+                </form>
+                </td>
             </tr>
             </tbody>
     </table>

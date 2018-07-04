@@ -2,22 +2,23 @@ package com.greenfoxacademy.connectionwithmysql.controllers;
 
 import com.greenfoxacademy.connectionwithmysql.models.Todo;
 import com.greenfoxacademy.connectionwithmysql.repositories.TodoRepository;
-import com.greenfoxacademy.connectionwithmysql.services.TodoService;
 import com.greenfoxacademy.connectionwithmysql.services.TodoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/todo")
 public class TodoController {
-
+TodoServiceImpl todoService;
   @Autowired
   TodoRepository todoRepository;
+
+  @Autowired
+  public TodoController(TodoServiceImpl todoService){
+    this.todoService = todoService;
+  }
 
   @GetMapping(value = {"/", "/list"})
   public String list (Model model) {
@@ -32,14 +33,20 @@ public class TodoController {
   }
 
   @GetMapping("/add")
-  public String renderAddPage(Model model){
+  public String renderAddPage(Model model) {
     model.addAttribute("newTodo", new Todo());
     return "add";
   }
 
   @PostMapping("/add")
-  public String addTodo(@ModelAttribute Todo todo){
+  public String addTodo(@ModelAttribute Todo todo) {
     todoRepository.save(todo);
+    return "redirect:/todo/";
+  }
+
+  @PostMapping("/delete")
+  public String delete(@RequestParam(value = "id") long id) {
+    todoRepository.deleteById(id);
     return "redirect:/todo/";
   }
 }
