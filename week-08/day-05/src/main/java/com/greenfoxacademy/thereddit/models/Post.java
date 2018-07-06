@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.List;
 
 @Entity
 public class Post {
@@ -13,7 +14,9 @@ public class Post {
   private long id;
   private String title;
   private String url;
-  private int rate;
+  private int vote;
+  private long score;
+
 
   public Post(){}
 
@@ -21,14 +24,20 @@ public class Post {
     this.title = title;
   }
 
-  public Post(String title, String url, int rate) {
+  public Post(String title, String url) {
     this.title = title;
     this.url = url;
-    this.rate = rate;
   }
 
   public long getId() {
     return id;
+  }
+  public void upVote() {
+    score++;
+  }
+
+  public void downVote() {
+    score--;
   }
 
   public void setId(long id) {
@@ -51,11 +60,19 @@ public class Post {
     this.url = url;
   }
 
-  public int getRate() {
-    return rate;
+  public int getVote() {
+    return vote;
   }
 
-  public void setRate(int rate) {
-    this.rate = rate;
+  public void setVote(int vote) {
+    this.vote = vote;
+  }
+
+  public long getScore() {
+    return score;
+  }
+
+  public void setScore(long score) {
+    this.score = score;
   }
 }

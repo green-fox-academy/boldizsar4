@@ -5,16 +5,10 @@
         <title>Login</title>
     </head>
     <body>
-        <form action="#" th:action="@{/login}" method="post">
-            <table>
-                <tr>
-                    <td><label>Enter your username:</label></td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Login"></td>
-                </tr>
-            </table>
+        <form action="/login" method="post">
+            <label for="name">Enter your username:</label>
+            <input type="text" name="name" id="name"/>
+            <input type="submit" value="Login"/>
         </form>
     </body>
 </html>

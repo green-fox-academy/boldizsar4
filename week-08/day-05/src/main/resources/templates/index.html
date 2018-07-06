@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Reddit</title>
+    </head>
+    <body>
+    <a href="/add">Submit new post</a>
+        <h1>Trending posts</h1>
+        <table>
+            <tbody>
+                <tr th:each="post: ${posts}">
+                    <td th:text="${post.getVote()}"></td>
+                    <td>
+                        <div>
+                            <a th:href="'/' + ${post.getId()} + '/voteup'"></a>
+                            <a th:href="'/' + ${post.getId()} + '/votedown'"></a>
+                        </div>
+                    </td>
+                    <td><h3> <a th:href="${post.url}" th:text="${post.getTitle()}" th:target="_blank"></a></h3> </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 </html>

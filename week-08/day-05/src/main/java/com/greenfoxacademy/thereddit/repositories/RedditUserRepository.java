@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RedditUserRepository extends CrudRepository<RedditUser, Long> {
-  RedditUser findById(String name);
+  RedditUser findByUsername(String name);
 }
