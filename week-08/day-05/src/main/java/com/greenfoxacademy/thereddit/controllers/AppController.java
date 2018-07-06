@@ -29,7 +29,7 @@ public class AppController {
 
   @GetMapping("/posts")
   public String renderIndexPage(Model model){
-    model.addAttribute("posts", postRepository.findAll());
+    model.addAttribute("posts", postRepository.findAllByOrderByScoreDesc());
     return "index";
   }
 

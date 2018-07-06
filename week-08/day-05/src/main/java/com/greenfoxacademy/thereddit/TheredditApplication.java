@@ -12,13 +12,12 @@ public class TheredditApplication implements CommandLineRunner {
 
   @Autowired
   PostRepository postRepository;
+
   public static void main(String[] args) {
     SpringApplication.run(TheredditApplication.class, args);
   }
 
   @Override
   public void run(String... args) throws Exception {
-    Post post1 = new Post("Hello World","sdfdgh.com");
-    postRepository.save(post1);
   }
 }
