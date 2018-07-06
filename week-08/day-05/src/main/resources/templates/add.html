@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Add</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Submit</title>
+    </head>
+    <body>
+        <h1>Submit a new post</h1>
+        <form action="/add" method="post" th:object="${post}">
+            Post title: <input th:placeholder="'Title'" type="text" th:field="*{title}" />
+            Post URL: <input th:placeholder="'URL'" type="text" th:field="*{url}" />
+            <input type="submit" value="add" />
+        </form>
+    </body>
 </html>

@@ -38,4 +38,11 @@ public class AppController {
     model.addAttribute("post", new Post());
     return "add";
   }
+
+  @PostMapping(value = "/add")
+  public String addPost(Post newpost){
+    postRepository.save(newpost);
+    return "redirect:/posts";
+  }
 }
+
