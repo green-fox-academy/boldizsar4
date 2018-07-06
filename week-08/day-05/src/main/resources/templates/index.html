@@ -10,14 +10,14 @@
         <table>
             <tbody>
                 <tr th:each="post: ${posts}">
-                    <td th:text="${post.getVote()}"></td>
+                    <td th:text="${post.getScore()}"></td>
                     <td>
                         <div>
-                            <a th:href="'/' + ${post.getId()} + '/voteup'"></a>
-                            <a th:href="'/' + ${post.getId()} + '/votedown'"></a>
+                            <a th:href="'/' + ${post.getId()} + '/voteup'"><span>+</span></a>
+                            <a th:href="'/' + ${post.getId()} + '/votedown'"><span>-</span></a>
                         </div>
                     </td>
-                    <td><h3> <a th:href="${post.url}" th:text="${post.getTitle()}" th:target="_blank"></a></h3> </td>
+                    <td><h3> <a th:href="${post.url}" th:text="${post.getTitle()}"></a></h3> </td>
                 </tr>
             </tbody>
         </table>

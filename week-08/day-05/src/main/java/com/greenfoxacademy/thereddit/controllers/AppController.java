@@ -44,5 +44,18 @@ public class AppController {
     postRepository.save(newpost);
     return "redirect:/posts";
   }
+
+  @GetMapping(value = "/{id}/voteup")
+  public String voteUp(@PathVariable(name = "id") Long id) {
+    postRepository.findById(id).get().voteUp();
+    postRepository.save(postRepository.findById(id).get());
+    return "redirect:/posts";
+  }
+  @GetMapping(value = "/{id}/votedown")
+  public String voteDown(@PathVariable(name = "id") Long id) {
+    postRepository.findById(id).get().voteDown();
+    postRepository.save(postRepository.findById(id).get());
+    return "redirect:/posts";
+  }
 }
 

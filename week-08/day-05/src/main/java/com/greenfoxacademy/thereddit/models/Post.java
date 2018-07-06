@@ -32,11 +32,11 @@ public class Post {
   public long getId() {
     return id;
   }
-  public void upVote() {
+  public void voteUp() {
     score++;
   }
 
-  public void downVote() {
+  public void voteDown() {
     score--;
   }
 
