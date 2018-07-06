@@ -18,7 +18,7 @@ public class TheredditApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    Post post1 = new Post("ja","sdfdgh.com");
+    Post post1 = new Post("Hello World","sdfdgh.com");
     postRepository.save(post1);
   }
 }
