@@ -1,18 +1,13 @@
-
-body {
-    font-family: 'open sans', helvetica, arial, sans;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: lightsteelblue;
+h1 {
+    text-align: center;
 }
+
 
 form {
     width: 40%;
     min-width: 400px;
     max-width: 500px;
-    height: 100px;
+    height: 200px;
     background: #fff;
     position: absolute;
     top: 33%;
@@ -37,7 +32,7 @@ h1 {
 input {
     font-size: 20px;
     display: block;
-    margin: auto auto;
+    margin: auto;
     width: 100%;
     margin-bottom: 2em;
     padding: .5em 0;

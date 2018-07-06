@@ -27,6 +27,16 @@ h1 {
 text-align: center;
 }
 
-tbody {
-    word-spacing: 10px;
+
+span {
+    padding-left: 30px;
+    word-spacing: 1px;
+}
+
+h3 {
+    padding-left: 50px;
+}
+
+span {
+    font-size: 25px;
 }
