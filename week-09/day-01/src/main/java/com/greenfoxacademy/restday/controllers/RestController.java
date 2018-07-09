@@ -1,12 +1,8 @@
 package com.greenfoxacademy.restday.controllers;
 
-import com.greenfoxacademy.restday.models.Appended;
-import com.greenfoxacademy.restday.models.Doubling;
+import com.greenfoxacademy.restday.models.*;
 import com.greenfoxacademy.restday.models.Error;
-import com.greenfoxacademy.restday.models.Greeting;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
@@ -34,5 +30,22 @@ public class RestController {
   @GetMapping("/appenda/{appendable}")
   public Object appenda(@PathVariable(value = "appendable")String word){
     return new Appended(word);
+  }
+
+  @PostMapping(value = "/dountil/{what}")
+  public Object doUntil(@PathVariable(name = "what", required = false) String operation,
+                        @RequestBody DoUntil doUntil) {
+    if (doUntil != null && operation != null) {
+      if (operation.equals("sum")) {
+        return new DoUntilSum(doUntil.getUntil());
+      } else if (operation.equals("factor")) {
+        return new DoUntilFactor(doUntil.getUntil());
+      }
+    }
+    if(doUntil == null){
+      return new Error ("Please provide a number!");
+    } else {
+      return new Error("Please provide a number!");
+    }
   }
 }
