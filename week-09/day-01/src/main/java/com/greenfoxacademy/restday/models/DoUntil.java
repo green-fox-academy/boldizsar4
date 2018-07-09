@@ -1,20 +1,20 @@
 package com.greenfoxacademy.restday.models;
 
 public class DoUntil {
-  int until;
+  private Integer until;
 
-  public DoUntil(int until) {
+  public DoUntil(Integer until) {
     this.until = until;
   }
 
   public DoUntil() {
   }
 
-  public int getUntil() {
+  public Integer getUntil() {
     return until;
   }
 
-  public void setUntil(int until) {
+  public void setUntil(Integer until) {
     this.until = until;
   }
 }

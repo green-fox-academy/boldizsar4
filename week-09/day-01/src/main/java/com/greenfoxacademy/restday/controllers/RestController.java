@@ -2,6 +2,7 @@ package com.greenfoxacademy.restday.controllers;
 
 import com.greenfoxacademy.restday.models.*;
 import com.greenfoxacademy.restday.models.Error;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
@@ -32,18 +33,15 @@ public class RestController {
     return new Appended(word);
   }
 
-  @PostMapping(value = "/dountil/{what}")
+  @PostMapping("/dountil/{what}")
   public Object doUntil(@PathVariable(name = "what", required = false) String operation,
-                        @RequestBody DoUntil doUntil) {
-    if (doUntil != null && operation != null) {
+                        @RequestBody(required = false) DoUntil doUntil) {
+    if (operation != null && doUntil != null) {
       if (operation.equals("sum")) {
         return new DoUntilSum(doUntil.getUntil());
-      } else if (operation.equals("factor")) {
+      } else {
         return new DoUntilFactor(doUntil.getUntil());
       }
-    }
-    if(doUntil == null){
-      return new Error ("Please provide a number!");
     } else {
       return new Error("Please provide a number!");
     }
