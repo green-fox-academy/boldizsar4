@@ -1,17 +1,17 @@
 package com.greenfoxacademy.restday.models;
 
 public class Greeting {
-  private String greeting;
+  private String welcome_message;
 
   public Greeting(String name, String title) {
-    this.greeting = "Oh, hi there " + name + " my dear " + title + "!";
+    this.welcome_message = "Oh, hi there " + name + ", my dear " + title + "!";
   }
 
-  public String getGreeting() {
-    return greeting;
+  public String getWelcome_message() {
+    return welcome_message;
   }
 
-  public void setGreeting(String greeting) {
-    this.greeting = greeting;
+  public void setWelcome_message(String welcome_message) {
+    this.welcome_message = welcome_message;
   }
 }
