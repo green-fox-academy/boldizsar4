@@ -26,7 +26,7 @@ public class RestControllerTest {
   private MockMvc mockMvc;
 
   @Test
-  public void doubleTest() throws Exception {
+  public void should_returnDouble() throws Exception {
     mockMvc.perform(get("/doubling")
             .param("input", "5"))
             .andExpect(status().isOk())
@@ -34,13 +34,29 @@ public class RestControllerTest {
   }
 
   @Test
-  public void doubleErrorTest() throws Exception {
+  public void should_returnError_when_nullInput() throws Exception {
     mockMvc.perform(get("/doubling")
             .param("input", ""))
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.error").value("Please provide an input!"));
   }
 
+  @Test
+  public void should_returnWelcomeMessage_when_twoStringInput() throws Exception {
+    mockMvc.perform(get("/greeter")
+            .param("name", "petike")
+            .param("title", "student"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.welcome_message").value("Oh, hi there petike, my dear student!"));
+  }
+
+  @Test
+  public void should_returnError_when_emptyInput() throws Exception {
+    mockMvc.perform(get("/greeter")
+            .param("input", ""))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.error").value("Please provide a name!"));
+  }
   @Test
   public void should_returnInputWithAEnding() throws Exception {
     mockMvc.perform(get("/appenda/kuty"))
@@ -64,22 +80,5 @@ public class RestControllerTest {
             .content("{\"until\":\"5\"}"))
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.result").value(120));
-  }
-
-  @Test
-  public void should_returnWelcomeMessage_when_twoStringInput() throws Exception {
-    mockMvc.perform(get("/greeter")
-            .param("name", "petike")
-            .param("title", "student"))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.welcome_message").value("Oh, hi there petike, my dear student!"));
-  }
-
-  @Test
-  public void should_returnError_when_emptyInput() throws Exception {
-    mockMvc.perform(get("/greeter")
-            .param("input", ""))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.error").value("Please provide a name!"));
   }
 }
