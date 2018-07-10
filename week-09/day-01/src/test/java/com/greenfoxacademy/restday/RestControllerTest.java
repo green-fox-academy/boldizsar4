@@ -40,4 +40,11 @@ public class RestControllerTest {
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.error").value("Please provide an input!"));
   }
+
+  @Test
+  public void appendaTest() throws Exception {
+    mockMvc.perform(get("/appenda/kuty"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.appended").value("kutya"));
+  }
 }
