@@ -42,14 +42,14 @@ public class RestControllerTest {
   }
 
   @Test
-  public void appendaTest() throws Exception {
+  public void should_returnInputWithAEnding() throws Exception {
     mockMvc.perform(get("/appenda/kuty"))
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.appended").value("kutya"));
   }
 
   @Test
-  public void doUntilSumTest() throws Exception {
+  public void should_returnSum() throws Exception {
     mockMvc.perform(post("/dountil/sum")
             .contentType(MediaType.APPLICATION_JSON)
             .content("{\"until\":\"5\"}"))
@@ -58,7 +58,7 @@ public class RestControllerTest {
   }
 
   @Test
-  public void doUntilFactorTest() throws Exception {
+  public void should_returnFactor() throws Exception {
     mockMvc.perform(post("/dountil/factor")
             .contentType(MediaType.APPLICATION_JSON)
             .content("{\"until\":\"5\"}"))
@@ -67,7 +67,7 @@ public class RestControllerTest {
   }
 
   @Test
-  public void greeterTest() throws Exception {
+  public void should_returnWelcomeMessage_when_twoStringInput() throws Exception {
     mockMvc.perform(get("/greeter")
             .param("name", "petike")
             .param("title", "student"))
@@ -76,7 +76,7 @@ public class RestControllerTest {
   }
 
   @Test
-  public void greeterErrorTest() throws Exception {
+  public void should_returnError_when_emptyInput() throws Exception {
     mockMvc.perform(get("/greeter")
             .param("input", ""))
             .andExpect(status().isOk())
