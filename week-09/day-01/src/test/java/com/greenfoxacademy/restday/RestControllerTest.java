@@ -47,4 +47,32 @@ public class RestControllerTest {
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.appended").value("kutya"));
   }
+
+  @Test
+  public void doUntilSumTest() throws Exception {
+    mockMvc.perform(post("/dountil/sum")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content("{\"until\":\"5\"}"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.result").value(15));
+  }
+
+  @Test
+  public void doUntilFactorTest() throws Exception {
+    mockMvc.perform(post("/dountil/factor")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content("{\"until\":\"5\"}"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.result").value(120));
+  }
+
+  @Test
+  public void greeterTest() throws Exception {
+    mockMvc.perform(get("/greeter")
+            .param("name", "petike")
+            .param("title", "student"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.welcome_message").value("Oh, hi there petike, my dear student!"));
+  }
+  
 }
