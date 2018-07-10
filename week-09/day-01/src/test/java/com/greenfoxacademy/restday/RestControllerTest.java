@@ -32,4 +32,12 @@ public class RestControllerTest {
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.result").value(10));
   }
+
+  @Test
+  public void doubleErrorTest() throws Exception {
+    mockMvc.perform(get("/doubling")
+            .param("input", ""))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.error").value("Please provide an input!"));
+  }
 }
