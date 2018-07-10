@@ -2,7 +2,6 @@ package com.greenfoxacademy.restday.controllers;
 
 import com.greenfoxacademy.restday.models.*;
 import com.greenfoxacademy.restday.models.Error;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
