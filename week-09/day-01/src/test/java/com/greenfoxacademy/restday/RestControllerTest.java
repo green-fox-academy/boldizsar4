@@ -74,5 +74,12 @@ public class RestControllerTest {
             .andExpect(status().isOk())
             .andExpect(jsonPath("$.welcome_message").value("Oh, hi there petike, my dear student!"));
   }
-  
+
+  @Test
+  public void greeterErrorTest() throws Exception {
+    mockMvc.perform(get("/greeter")
+            .param("input", ""))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.error").value("Please provide a name!"));
+  }
 }
